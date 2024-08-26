@@ -4,8 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 03</title>
+    <script src="https://kit.fontawesome.com/70d1331392.js" crossorigin="anonymous"></script>
+     <!-- google font link  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+     <!-- tailwind and daisyUI cnd link  -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- fontawesome kit link  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primaryTextColor: '#212121',
+                secondaryTextColor: '#494949',
+                thirdTextColor: '#737373',
+                firstLightGreen: '#ABEF5F',
+                sendaryLightGreen: 'rgba(171, 239, 95, 0.5)',
+                clifford: '#da373d',
+                
+              },
+              fontFamily: {
+                manrope: ['Manrope', 'sans-serif'], //defining the font family
+              },
+            },
+          },
+        };
+    </script>
 </head>
-<body>
+<body class="font-manrope">
+    <header class="bg-gradient-to-t from-white to-slate-100">
+        <div class="max-w-screen-xl mx-auto">
+            <!-- Nav Bar -->
+             <nav >
+                <div class="navbar"> 
+                    <div class="navbar-start">
+                        <a class="btn btn-ghost text-xl font-extrabold"><i class="fa-solid fa-arrow-right bg-firstLightGreen p-1 rounded-full -rotate-45"></i> Rinterio</a>
+                        </div>
+                        <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li class="font-extrabold"><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                        </div>
+                        <div class="lg:block navbar-end hidden ">
+                            <div class="justify-end items-center flex gap-4">
+                                <div><i class="fa-solid rounded-full fa-magnifying-glass p-2 bg-white "></i>
+                                </div>
+                                <div><i class="rounded-full fa-solid fa-cart-shopping p-2 bg-white "></i>
+                                </div>
+                                <div>
+                                    <a class="bg-firstLightGreen btn ">Book Consult<i class="bg-stone-900 text-white fa-solid p-2 rounded-full -rotate-45 fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="0" role="button" class="lg:hidden  btn btn-ghost  ">
+                            <i class="fbg-white a-bars fa-solid text-2xl py-2 px-3  rounded-full"></i>
+                        </div>
+                </div>
+             </nav>
+             <!-- hero section -->
+             <div class="lg:py-24 py-6  pt-9">
+                <!-- hero image  -->
+                <div class="mx-auto w-11/12 "><img class="mx-auto" src="assets/banner.png" alt=""></div>
+                <div class="mx-auto text-center w-11/12 my-6">
+                    <h1 class="lg:text-6xl text-3xl leading-10 font-extrabold text-primaryTextColor  ">A barn house of this design has a striking appearance</h1>
+                    <p class="lg:w-10/12 mx-auto mt-6 mb-7 text-secondaryTextColor leading-6 text-sm lg:text-base ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                    <div class="lg:hidden mx-auto bg-sendaryLightGreen rounded-full">
+                        <button class="text-lg font-bold py-2">View Details<i class="fa-solid fa-arrow-right ml-2 bg-firstLightGreen p-1.5 rounded-full -rotate-45"></i></button>
+                    </div>
+                    <div class="hidden lg:block">
+                        <button class="bg-sendaryLightGreen font-bold text-lg rounded-full py-2 px-6 ">View Details<i class="fa-solid fa-arrow-right ml-2 bg-firstLightGreen p-1.5 -rotate-45 rounded-full "></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
     
 </body>
 </html>
